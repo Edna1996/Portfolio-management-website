@@ -89,6 +89,7 @@ nav.navbar {
   top: 0;
   z-index: 9999;
   transition:  0.32s ease-in-out;
+  background: #000;
 }
 nav.navbar.scrolled {
   padding: 0px 0;
@@ -303,7 +304,8 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 /************ Skills Css ************/
 .skill {
   padding: 0 0 50px 0;
-  position: relative;
+  /* position: relative; */
+  margin-top: 10rem;
 }
 .skill-bx {
   background: #151515;
