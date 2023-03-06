@@ -1,0 +1,23 @@
+/* Project Page */
+.projects-page {
+  padding: 1rem;
+  max-width: 70%;
+  margin: 5rem auto 0 auto;
+  text-align: center;
+  background: #333;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 15px;
+  overflow: scroll;
+  scroll-behavior: smooth;
+  height: 75vh;
+}
+
+.projects-page h1 {
+  font-weight: 300;
+  color: #44c0b6;
+  font-size: 2.5rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin: 1rem auto 2rem auto;
+}
