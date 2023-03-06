@@ -7,22 +7,37 @@ import ProjectsPage from './components/ProjectsPage';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './components/home.css';
+import { useEffect, useState} from 'react';
+import { useNavigate } from "react-router-dom";
 import './components/navbar.css';
+import Login from './components/Login';
 
 /* eslint-disable react/prefer-stateless-function */
-class App extends React.Component {
-  render() {
+function App() {
+
+  const [user, setUser] = useState({})
+
+  const navigate = useNavigate()
+  useEffect(() => {
+    const user_id = localStorage.getItem('user_id')
+    user_id ? setUser({id: user_id}) : navigate('/login')
+  }, [navigate, setUser])
+  
+console.log(user)
     return (
       <div className="App">
         <NavBar />
         <Routes>
-          <Route path="/" element={<Home />} />
+          
+        
+          <Route exact path = '/' element = {<Home user = {user} />}/>
           <Route path="/skills" element={<SkillsPage />} />
+          <Route exact path = '/login' element = {<Login setUser = {setUser}/>} />
           <Route path="/projects" element={<ProjectsPage />} />
         </Routes>
       </div>
     );
   }
-}
+
 
 export default App;
