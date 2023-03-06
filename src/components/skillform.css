@@ -1,0 +1,34 @@
+.NewSkillForm {
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: teal;
+  text-align: left;
+  border: 0.2rem solid goldenrod;
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+.NewSkillForm > input,
+.NewSkillForm > select {
+  font-size: 1rem;
+  font-weight: bold;
+  color: teal;
+  padding: 0.2rem;
+  border: 0.2rem solid goldenrod;
+  border-radius: 0.3rem;
+  outline: none;
+}
+
+.NewSkillForm > button {
+  grid-column: span 2;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  padding: 0.2rem;
+  background-color: teal;
+  border: 0.2rem solid teal;
+  border-radius: 0.3rem;
+}
