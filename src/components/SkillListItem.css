@@ -1,0 +1,34 @@
+.SkillListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin: 0.5rem;
+  margin-right: 3rem;
+  padding: 0.3rem 0.6rem;
+  border: 0.2rem solid goldenrod;
+  border-radius: 0.3rem;
+  color: teal;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.SkillListItem > .level {
+  margin-left: 5rem;
+  padding: 0.3rem 0.8rem;
+  color: white;
+  background-color: teal;
+  border-radius: 0.8rem;
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.delete-btn {
+  color: white;
+  background-color: teal;
+  border: 0.2rem solid teal;
+  border-radius: 0.3rem;
+  padding: 0.2rem;
+  font-size: 1rem;
+  font-weight: bold;
+}

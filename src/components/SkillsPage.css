@@ -1,0 +1,19 @@
+.skills {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.padding-0 {
+  padding: 0;
+}
+
+h1 {
+  color: goldenrod;
+}
+
+.teal-text {
+  color: teal;
+}
